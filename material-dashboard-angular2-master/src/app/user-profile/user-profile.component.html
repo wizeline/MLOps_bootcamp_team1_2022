@@ -1,0 +1,30 @@
+<div class="main-content">
+
+  <div class="container-fluid">
+      <div class="row">
+          <div class="col-md-12">
+              <div class="card">
+                  <div class="card-header card-header-danger">
+                      <h4 class="card-title">Sentimental analysis Model</h4>
+                      <!-- <p class="card-category">Complete your profile</p> -->  
+                   
+                  </div>
+                  <div class="card-body">
+                      <form>
+                          <div class="row">
+                              <div class="col-md-12">
+                                <label>Model will rate , email text in to 3 categories ( Neutral ,Positive , Negative  )</label>
+                                <mat-form-field class="example-full-width">
+                                   <textarea matInput style="height: 195px!important;" placeholder="Write email example here ...." (input)="sendData($event)"></textarea>
+                                   <div *ngIf="showSpinner" class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
+                                   <div *ngIf="icon"><img [src]="icon" alt="" srcset="" class="icon"></div>
+                                 </mat-form-field>
+                              </div>
+                          </div>
+                      </form>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>

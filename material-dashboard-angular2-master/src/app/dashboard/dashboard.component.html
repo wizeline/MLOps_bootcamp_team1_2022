@@ -1,0 +1,28 @@
+<div class="main-content">
+    <div>
+        <div class="card card-chart">
+            <div class="card-header card-header-warning">
+                <h3 style="text-align:center ">{{title}}</h3>
+                <div class="ct-chart" id="websiteViewsChart"></div>
+            </div>
+            <div class="input-select">
+                <label for="graph selector options">Choose an analysis option  </label>
+                <select name="options" value="company" id="graph-selector" (change)="changeValues($event)">
+                    <option selected="selected" value="company">Over all By company </option>
+                    <optgroup label="By user">
+                        <option value="arora-h">Arora  H.</option>
+                        <option value="dean-c">Dean C.</option>
+                        <option value="farmer-d">Farmer D.</option>
+                        <option value="carson-m">Carson M.</option>
+                        <option value="neal-s">Neal S.</option>
+                    </optgroup>
+                    <optgroup label="Top 5 by sentiment">
+                        <option value="Positive" >Positive</option>
+                        <option value="Negative" >Negative</option>
+                        <option value="Neutral" >Neutral</option>
+                    <optgroup>    
+                </select>
+            </div>
+        </div>
+    </div>
+</div>
