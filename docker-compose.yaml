@@ -1,0 +1,21 @@
+version: '3.8'
+services:
+  backend:
+    build: ./app
+    container_name: fastApi-backend
+    ports:
+      - '8080:8000'
+  frontend:
+    container_name: mlops-ui
+    build: ./material-dashboard-angular2-master
+    ports:
+      - '80:4200'
+      - '4200:80'
+    stdin_open: true
+    tty: true  
+    depends_on:
+      - backend   
+
+
+    
+

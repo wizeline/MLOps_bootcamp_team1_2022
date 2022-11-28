@@ -51,6 +51,7 @@ export class DashboardComponent implements OnInit {
       high: 1000,
       chartPadding: { top: 0, right: 5, bottom: 0, left: 0 },
       with: "100%",
+      distributeSeries: true,
       height: "500px",
     };
     const responsiveOptions: any[] = [
@@ -123,6 +124,12 @@ export class DashboardComponent implements OnInit {
           axisX: {
             showGrid: false,
             showLabel: true,
+          },
+          axisY: {
+            offset: 80,
+            labelInterpolationFnc: function (value) {
+              return value + " K";
+            },
           },
           low: 0,
           high: max,

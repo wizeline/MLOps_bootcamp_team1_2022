@@ -15293,6 +15293,7 @@ Copyright (c) 2015 Daniel Eden
   color: rgba(0, 0, 0, 0.4);
   display: -webkit-box;
   display: -ms-flexbox;
+  justify-content: center;
   display: flex; }
 
 .ct-chart .ct-label.ct-vertical.ct-start {
